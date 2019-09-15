@@ -10,7 +10,7 @@ f_biss_h1 = f_biss(x0, h1)
 f_biss_h2 = f_biss(x0, h2)
 f_biss_h3 = f_biss(x0, h3)
 
-syms f(x)
+syms sym_f(x)
 
 sym_f(x) = (sqrt((x-5)^5)+2*cos(pi*sqrt(x)))/(sqrt(x+4*log(x-pi)) - 1);  % anger f(x)
 
