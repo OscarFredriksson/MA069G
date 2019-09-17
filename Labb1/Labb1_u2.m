@@ -8,5 +8,7 @@ f_prim = diff(f); % anger ett uttryck för derivatan f?(x)
 
 x = 7; % punkten x = x_0
 
-f_prim_x_0 = subs(f_prim) % värdet på derivatan i x = x_0
+f_prim_x_0 = subs(f_prim); % värdet på derivatan i x = x_0
+
+eval(f_prim_x_0)    %Exakt värde
 
