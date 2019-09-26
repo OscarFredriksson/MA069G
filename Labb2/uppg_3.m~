@@ -1,0 +1,36 @@
+format long;
+
+clear;
+clc;
+
+N = [1000, 10000, 100000, 1000000];
+
+[N_1D, mu_1D, err_1D] = mcconv([-5 5], N);
+[N_2D, mu_2D, err_2D] = mcconv([-5 5; -5 5], N);
+
+
+a_1D = polyfit(log(N_1D), log(err_1D), 1);
+a_2D = polyfit(log(N_2D), log(err_2D), 1);
+
+p_1D = a_1D(1);
+C_1D = exp(a_1D(2));
+
+p_2D = a_2D(1);
+C_2D = exp(a_2D(2));
+
+%a) Vi får konvergens. 1D och 2D skiljer sig eftersom vi har 2 dimensioner
+%istället för 1 och då får vi en volym istället för en area under
+%integralen. 
+
+%b) p ändras ej beroende på dimensionen, detta stämmer enligt teorin. C
+%ökar när dimensionen ökar. 
+
+%c) 
+
+
+
+
+
+
+
+
