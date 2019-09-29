@@ -44,3 +44,5 @@ end
 %exaktare normalfördelning. 
 
 %c) Eftersom vi gör fler tärningskast får vi en tätare och mer precis fördelning.
+
+%e) Vi behöver gångra med 1000 för att kurvan ska bli lika hög 
