@@ -1,0 +1,15 @@
+A_E + A_F <= 350;		
+B_E + B_F <= 200;
+C_E + C_F <= 260; 
+D_E + D_F <= 450;
+
+E_G + E_H + E_I <= A_E + B_E + C_E + D_E;
+F_G + F_H + F_I <= A_F + B_F + C_F + D_F;
+
+E_G + F_G = 550;
+E_H + F_H = 260;
+E_I + F_I = 410;
+
+A_E + B_E + C_E + D_E <= 700;
+
+min = 4*A_E + 6*A_F + 5*B_E + 7*B_F + 8*C_E + 5*C_F + 4*D_E + 4*D_F + 2*E_G + 3*E_H + 1*E_I + 2*F_G + 2*F_H + 4*F_I;
