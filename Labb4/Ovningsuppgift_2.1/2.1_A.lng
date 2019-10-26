@@ -1,10 +1,16 @@
-MIN = 5*A1+7*A2+8*B1+6*B2+3*C1+3*C2+7*D1+9*D2+4*E1+2*E2;
 
+!Vilkor för kapacitet från varje underleverantör:	;
 A1+A2<=170;
 B1+B2<=260;
 C1+C2<=135;
 D1+D2<=155;
-E1+E2<=190;
+E1+E2<=240;
 
+!Vilkor för efterfrågan till varje fabrik:	;
 A1+B1+C1+D1+E1=360;
 A2+B2+C2+D2+E2=540;
+
+!Ställer upp målfunktionen med konstnad för varje transportsträcka:	;
+MIN = 5*A1+7*A2+8*B1+6*B2+3*C1+3*C2+7*D1+9*D2+4*E1+2*E2;
+
+!B) Vi vill helst ha fler av E, eftersom denna är den billigaste för fabrik 2. 
